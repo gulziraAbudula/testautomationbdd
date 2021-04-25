@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4366153999,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User can login to Trello with valid credentials",
+        "description": "",
+        "id": "trello-login-functionality;user-can-login-to-trello-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 832128299,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1584257301,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User goes to the Trello home page",
+            "match": {
+              "location": "TrelloLoginSteps.user_goes_to_trello_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1170092800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User clicks on login link",
+            "match": {
+              "location": "TrelloLoginSteps.user_clicks_on_login_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100176000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on login page",
+            "match": {
+              "location": "TrelloLoginSteps.user_is_on_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 232126399,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user logins with valid credentials",
+            "match": {
+              "location": "TrelloLoginSteps.user_logins_with_valid_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3062632099,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should be able to see Trello boards page",
+            "match": {
+              "location": "TrelloLoginSteps.user_should_be_able_to_see_Trello_boards_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Trello login functionality",
+    "description": "",
+    "id": "trello-login-functionality",
+    "keyword": "Feature",
+    "uri": "trello_login.feature"
+  }
+]

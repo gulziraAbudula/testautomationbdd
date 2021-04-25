@@ -1,5 +1,5 @@
 target/
 .idea/
-report/
 *.iml
 *.class
+user.json
