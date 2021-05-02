@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4366153999,
+              "duration": 2910238800,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "User can login to Trello with valid credentials",
+        "line": 4,
+        "name": "Verified user can enter email and password",
         "description": "",
-        "id": "trello-login-functionality;user-can-login-to-trello-with-valid-credentials",
+        "id": "trello-credential-logins;verified-user-can-enter-email-and-password",
         "after": [
           {
             "result": {
-              "duration": 832128299,
+              "duration": 749431200,
               "status": "passed"
             },
             "match": {
@@ -34,10 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1584257301,
+              "duration": 1310803700,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "User goes to the Trello home page",
             "match": {
               "location": "TrelloLoginSteps.user_goes_to_trello_home_page()"
@@ -46,59 +46,88 @@
           },
           {
             "result": {
-              "duration": 1170092800,
+              "duration": 3348487800,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User clicks on login link",
+            "line": 6,
+            "name": "user goes to the Sign up page",
             "match": {
-              "location": "TrelloLoginSteps.user_clicks_on_login_link()"
+              "location": "TrelloCredentialsSteps.user_goes_to_the_Sign_up_page()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 100176000,
+              "duration": 3096415100,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User is on login page",
+            "line": 7,
+            "name": "user clicks on login link",
             "match": {
-              "location": "TrelloLoginSteps.user_is_on_login_page()"
+              "location": "TrelloCredentialsSteps.user_clicks_on_login_link()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6641083900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters email and password for verified users",
+            "match": {
+              "location": "TrelloCredentialsSteps.user_enters_email_and_password_for_verified_users(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nijatmn@gmail.com",
+                  "pass123!"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "nathan1@gmail.com",
+                  "pass456!"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "ebony9@gmail.com",
+                  "pass100!"
+                ],
+                "line": 11
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 232126399,
+              "duration": 67952900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user logins with valid credentials",
+            "line": 12,
+            "name": "user should not see any error",
             "match": {
-              "location": "TrelloLoginSteps.user_logins_with_valid_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3062632099,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user should be able to see Trello boards page",
-            "match": {
-              "location": "TrelloLoginSteps.user_should_be_able_to_see_Trello_boards_page()"
+              "location": "TrelloCredentialsSteps.user_should_not_see_any_error()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@new"
           }
         ]
       }
     ],
-    "name": "Trello login functionality",
+    "name": "Trello credential logins",
     "description": "",
-    "id": "trello-login-functionality",
+    "id": "trello-credential-logins",
     "keyword": "Feature",
-    "uri": "trello_login.feature"
+    "uri": "trello_credentials.feature"
   }
 ]
